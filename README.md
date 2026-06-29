@@ -123,9 +123,9 @@ misc
 
 <br/>
 
-**★ [ZacharyGeurts](https://github.com/ZacharyGeurts/ZacharyGeurts)**  
+**★ [ZacharyGeurts](https://zacharygeurts.github.io/ZacharyGeurts/)**  
 profile hub
-<br/><a href="https://github.com/ZacharyGeurts/ZacharyGeurts/wiki" title="Wiki">📖</a> <a href="https://github.com/ZacharyGeurts/ZacharyGeurts/releases" title="GitHub Releases">🏷️</a> <a href="https://github.com/ZacharyGeurts/ZacharyGeurts" title="Repository">💻</a> <a href="https://github.com/ZacharyGeurts/ZacharyGeurts/issues" title="Issues">🐛</a>
+<br/><a href="https://zacharygeurts.github.io/ZacharyGeurts/" title="GitHub Pages">📄</a> <a href="https://github.com/ZacharyGeurts/ZacharyGeurts/wiki" title="Wiki">📖</a> <a href="https://github.com/ZacharyGeurts/ZacharyGeurts/releases" title="GitHub Releases">🏷️</a> <a href="https://github.com/ZacharyGeurts/ZacharyGeurts" title="Repository">💻</a> <a href="https://github.com/ZacharyGeurts/ZacharyGeurts/issues" title="Issues">🐛</a>
 
 </td></tr>
 </table>
