@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AmmoOS Stack — @ZacharyGeurts</title>
+  <meta name="description" content="AmmoOS-led field stack — NEXUS C2, ZNetwork, Queen, KILROY navigation." />
+  <link rel="stylesheet" href="releases.css" />
+  <style>
+    .stack { font-family: var(--mono, monospace); background: var(--panel); padding: 1rem; border-radius: 8px; line-height: 1.7; }
+    .lead { border-left: 3px solid #22c55e; padding-left: 1rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .card { border: 1px solid var(--edge); border-radius: 10px; padding: 1rem; background: var(--panel); }
+    .card h3 { margin: 0 0 0.5rem; }
+    .card.leader { border-color: #22c55e; }
+  </style>
+</head>
+<body>
+  <h1>AmmoOS Stack</h1>
+  <p class="lead"><strong>AmmoOS leads.</strong> Install once, wire siblings, operate on loopback <code>127.0.0.1</code>.</p>
+  <nav>
+    <a href="https://github.com/ZacharyGeurts">Profile</a>
+    <a href="https://zacharygeurts.github.io/AmmoOS/">AmmoOS manual</a>
+    <a href="https://zacharygeurts.github.io/Queen/">Queen</a>
+    <a href="https://zacharygeurts.github.io/ZNetwork/">ZNetwork</a>
+    <a href="https://zacharygeurts.github.io/KILROY/">KILROY</a>
+    <a href="display-example.html">Display example</a>
+  </nav>
+
+  <h2>Layer diagram</h2>
+  <pre class="stack">Hardware (witness)
+  ↓
+NEXUS C2 · AmmoOS · :9477/field
+  ↓
+ZNetwork · sole internet pipe
+  ↓
+Queen CANVAS · RTX display (not GUI)
+  ↓
+Queen Browser · :9481
+  ↓
+AmmoOS inside Queen Start tab</pre>
+
+  <h2>Repos</h2>
+  <div class="grid">
+    <article class="card leader">
+      <h3><a href="https://zacharygeurts.github.io/AmmoOS/">★ AmmoOS</a></h3>
+      <p>Field OS + NEXUS C2 · <code>2.0.0-beta3</code></p>
+      <p><a href="https://zacharygeurts.github.io/AmmoOS/">📄 Manual</a> · <a href="https://github.com/ZacharyGeurts/AmmoOS">💻 Repo</a></p>
+    </article>
+    <article class="card">
+      <h3><a href="https://zacharygeurts.github.io/Queen/">Queen</a></h3>
+      <p>Browser shell + CANVAS · <code>:9481</code></p>
+      <p><a href="https://zacharygeurts.github.io/Queen/">📄 Hub</a> · <a href="https://github.com/ZacharyGeurts/Queen">💻 Repo</a></p>
+    </article>
+    <article class="card">
+      <h3><a href="https://zacharygeurts.github.io/ZNetwork/">ZNetwork</a></h3>
+      <p>Smart relayer · <code>2.1.0</code></p>
+      <p><a href="https://zacharygeurts.github.io/ZNetwork/">📄 Manual</a> · <a href="https://github.com/ZacharyGeurts/ZNetwork">💻 Repo</a></p>
+    </article>
+    <article class="card">
+      <h3><a href="https://zacharygeurts.github.io/KILROY/">KILROY</a></h3>
+      <p>Field boot kernel · Taco</p>
+      <p><a href="https://zacharygeurts.github.io/KILROY/">📄 Manual</a> · <a href="https://github.com/ZacharyGeurts/KILROY">💻 Repo</a></p>
+    </article>
+    <article class="card">
+      <h3><a href="https://zacharygeurts.github.io/Grok16/">Grok16</a></h3>
+      <p>Sovereign compiler · <code>5.1.0</code></p>
+      <p><a href="https://zacharygeurts.github.io/Grok16/">📄 Manual</a> · <a href="https://github.com/ZacharyGeurts/Grok16">💻 Repo</a></p>
+    </article>
+  </div>
+
+  <h2>Live surfaces</h2>
+  <table>
+    <tr><th>Surface</th><th>URL</th></tr>
+    <tr><td>Host desktop</td><td><code>http://127.0.0.1:9477/field</code></td></tr>
+    <tr><td>Field command</td><td><code>http://127.0.0.1:9477/command</code></td></tr>
+    <tr><td>ZNetwork Hub</td><td><code>http://127.0.0.1:9477/field-znetwork</code></td></tr>
+    <tr><td>Queen Browser</td><td><code>http://127.0.0.1:9481/world/browser.html</code></td></tr>
+  </table>
+
+  <h2>Install</h2>
+  <pre><code>git clone https://github.com/ZacharyGeurts/AmmoOS.git
+cd AmmoOS && ./scripts/wire-stack.sh && sudo ./install-all.sh</code></pre>
+</body>
+</html>
